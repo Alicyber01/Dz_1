@@ -12,41 +12,43 @@ namespace Hm_1
         static void Main(string[] args)
         {
             //Вывести на экран число e (основание натурального логарифма) с точностью до десятых.
-            Console.WriteLine("Задание 1");
-            Console.WriteLine(Math.E);
+            Console.WriteLine("Exercise 1");
+            double e=Math.E;
+            Console.WriteLine($"{e;F1}");
 
 
             //Вывести на экран числа 50 и 10 одно под другим
-            Console.WriteLine("\nЗадание 2");
+            Console.WriteLine("Exercise 2");
             Console.WriteLine(50);
             Console.WriteLine(10);
 
 
 
             //Составить программу вывода на экран «столбиком» четырех любых чисел
-            Console.WriteLine("\nЗадание 3");
-            Console.WriteLine(25);
-            Console.WriteLine(78);
-            Console.WriteLine(34);
-            Console.WriteLine(-12);
+            Console.WriteLine("Exercise 3");
+            Console.WriteLine(7);
+            Console.WriteLine(77);
+            Console.WriteLine(777);
+            Console.WriteLine(7777);
 
 
             //Пользователь вводит число. Выведите на экран число, которое больше введенного на 10.
-            Console.WriteLine("\nЗадание 4");
-            Console.WriteLine("Пользователь вводит число. Выведите на экран число, которое больше введенного на 10");
-            int userNumber = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine(userNumber + 10);
+            Console.WriteLine("Exercise 4");
+            Console.Write("Введите число: ");
+            double number = double.Parse(Console.ReadLine());
+            Console.WriteLine("Число, которое больше введенного на 10: " +(number+10));
+    
 
 
             //Дана сторона квадрата. Найти его периметр.
-            Console.WriteLine("\nЗадание 5");
+            Console.WriteLine("Exercise 5");
             Console.WriteLine("Дана сторона квадрата. Найти его периметр");
             int squareSide = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine(squareSide * 4);
 
 
             //Дан радиус окружности. Найти длину окружности и площадь круга.
-            Console.WriteLine("\nЗадание 6");
+            Console.WriteLine("Exercise 6");
             Console.WriteLine("Дан радиус окружности. Найти длину окружности и площадь круга.");
             int radius = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine($"Длина окружности: {radius * 2 * Math.PI}");
@@ -54,7 +56,7 @@ namespace Hm_1
 
 
             //Найти значение y=cos(x)
-            Console.WriteLine("\nЗадание 7");
+            Console.WriteLine("Exercise 7");
             Console.WriteLine("Найти значение y=cos(x)");
             int x_7 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine($"y = {Math.Cos(x_7)}");
@@ -62,7 +64,7 @@ namespace Hm_1
 
 
             //Даны основания и высота равнобедренной трапеции. Найти ее периметр.
-            Console.WriteLine("\nЗадание 8");
+            Console.WriteLine("Exercise 8");
             Console.WriteLine("Найти периметр трапеции");
 
             Console.WriteLine("Меньшее основание: ");
@@ -79,7 +81,7 @@ namespace Hm_1
 
 
             //Известна стоимость 1 кг конфет, печенья и яблок. Найти стоимость всей покупки,если купили x кг конфет, у кг печенья и z кг яблок.
-            Console.WriteLine("\nЗадание 9");
+            Console.WriteLine("Exercise 9");
             Console.WriteLine("Известна стоимость 1 кг конфет, печенья и яблок. Найти стоимость всей покупки,\r\nесли купили x кг конфет, у кг печенья и z кг яблок.");
 
             Console.WriteLine("цена конфеты: ");
@@ -108,7 +110,7 @@ namespace Hm_1
             //        Труд
             //                Май
 
-            Console.WriteLine("\nЗадание 10");
+            Console.WriteLine("Exercise 10");
 
             Console.Write("Мир");
             Console.Write("Труд");
@@ -120,7 +122,7 @@ namespace Hm_1
 
             //Программа просит пользователя ввести 2 числовые переменные. А после она меняет их местами и выводит результат на экран. Но, так как пользователь может ошибиться, необходимо предусмотреть тот факт, что пользователь может ввести, например, букву или строку, а так же учесть, что число может быть дробным, и для выделения её дробной части одни используют точку, другие – запятую.
 
-            Console.WriteLine("\nЗадание 11");
+            Console.WriteLine("Exercise 11");
 
             string firstNumber_11 = Console.ReadLine();
             string secondNumber_11 = Console.ReadLine();
@@ -147,7 +149,7 @@ namespace Hm_1
 
 
             //Программа для подсчета периметра и площади фигур (треугольник, четырехугольник, круг). Пользователь выбирает фигуру, указывает, что программа будет считать – площадь или периметр.Задаётся все необходимые значения, а на основе полученных результатов, программа должна подсчитать, какими могли бы быть периметры или площади остальных фигур.
-            Console.WriteLine("\nЗадание 12");
+            Console.WriteLine("Exercise 12");
 
             Console.WriteLine("Выберите фигуру: треугольник, четырёхугольник, круг:");
             string obj = Console.ReadLine();
@@ -208,7 +210,7 @@ namespace Hm_1
 
 
             //Составить программу вывода на экран числа, вводимого с клавиатуры. Вводимому числу должно предшествовать сообщение «Вы ввели число».
-            Console.WriteLine("\nЗадание 13");
+            Console.WriteLine("Exercise 13");
 
             Console.WriteLine($"Вы ввели число: {Console.ReadLine()}");
 
@@ -216,7 +218,7 @@ namespace Hm_1
 
 
             // Составить программу вывода на экран следующей информации: 2кг 13 17
-            Console.WriteLine("\nЗадание 14");
+            Console.WriteLine("Exercise 14");
 
             Console.WriteLine("2кг");
             Console.WriteLine("13 17");
@@ -224,7 +226,7 @@ namespace Hm_1
 
 
             //Составить программу вывода на экран «столбиком» четырех случайных чисел.
-            Console.WriteLine("\nЗадание 15");
+            Console.WriteLine("Exercise 15");
 
             Random random = new Random();
 
@@ -238,7 +240,7 @@ namespace Hm_1
 
             //Найти корни квадратного уравнения(коэффициента задаются пользователем с клавиатуры)
 
-            Console.WriteLine("\nЗадание 16");
+            Console.WriteLine("Exercise 16");
 
             Console.WriteLine("Enter the coefficients:");
             float a = Convert.ToInt32(Console.ReadLine());
@@ -264,7 +266,7 @@ namespace Hm_1
 
 
             //Даны два целых числа. Найти: а) их среднее арифметическое; б) их среднее геометрическое.
-            Console.WriteLine("\nЗадание 17");
+            Console.WriteLine("Exercise 17");
 
             int firstNumber_17 = Convert.ToInt32(Console.ReadLine());
             int secondNumber_17 = Convert.ToInt32(Console.ReadLine());
@@ -275,7 +277,7 @@ namespace Hm_1
 
 
             //Известны координаты на плоскости двух точек. Составить программу вычисления расстояния между ними.
-            Console.WriteLine("\nЗадание 18");
+            Console.WriteLine("Exercise 18");
 
             Console.Write("X1: ");
             int x1_18 = Convert.ToInt32(Console.ReadLine());
@@ -296,7 +298,7 @@ namespace Hm_1
 
             //Составить программу обмена значениями трех переменных величин а, b, c по следующим двум схемам:
 
-            Console.WriteLine("\nЗадание 19");
+            Console.WriteLine("Exercise 19");
 
             int a1_19 = 4;
             int b1_19 = 5;
@@ -326,7 +328,7 @@ namespace Hm_1
             //б) сколько полных минут прошло с начала очередного часа;
             //в) сколько полных секунд прошло с начала очередной минуты.
 
-            Console.WriteLine("\nЗадание 20");
+            Console.WriteLine("Exercise 20");
 
             int seconds = Convert.ToInt32(Console.ReadLine());
             int minutes = seconds / 60;
